@@ -64,6 +64,12 @@ nav {
    
 }
 
+nav > span:hover {
+      transition: 0.5s ease-in-out;
+      box-shadow: 2px 2px;
+   }
+
+
 #container {
    display: flex;
    justify-content: space-evenly;
@@ -94,7 +100,7 @@ nav {
    border-radius: 50%;
    border: 3px solid #145434;
    color: #145434;
-   font-size: 1.2rem;
+   font-size: 24px;
    z-index: 1;
    text-align: center;
    font-weight: bold;
@@ -145,12 +151,21 @@ nav {
    right: -10px;
    bottom: -10px;
    color: #145434;
-   font-weight: bold;
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   gap: 40px;
+   gap: 30px;
    padding: 10px;
+}
+
+.lightbox span {
+   font-weight: bold;
+   font-size: 2rem;
+}
+
+.lightbox:hover{
+   transition: 0.5s ease-in-out;
+   box-shadow: 2px 2px;
 }
 
 
