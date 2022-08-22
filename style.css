@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+   font-family: 'Material Icons';
+   font-style: normal;
+   font-weight: 400;
+   src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+   src: local('Material Icons'),
+     local('MaterialIcons-Regular'),
+     url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+     url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+     url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+ }
+
+ .material-icons {
+   font-family: 'Material Icons';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 24px;  /* Preferred icon size */
+   display: inline-block;
+   line-height: 1;
+   text-transform: none;
+   letter-spacing: normal;
+   word-wrap: normal;
+   white-space: nowrap;
+   direction: ltr;
+ 
+   /* Support for all WebKit browsers. */
+   -webkit-font-smoothing: antialiased;
+   /* Support for Safari and Chrome. */
+   text-rendering: optimizeLegibility;
+ 
+   /* Support for Firefox. */
+   -moz-osx-font-smoothing: grayscale;
+ 
+   /* Support for IE. */
+   font-feature-settings: 'liga';
+ }
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body, html {
+   height: 100vh;
+   width: 100vw; 
+   background-color: #ffeedf;
+   font-family: 'Space Grotesk', sans-serif;
+}
+
+nav {
+   color: #145434;
+   height: 8vh;
+   width: 100vw;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 2rem;
+   font-weight: bold;
+   padding: 2vh;
+   border-bottom: 1px solid #145434;
+   
+}
+
+#container {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-direction: column;
+   height: 92vh;
+   width: 100vw;
+}
+
+.row {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 60px;
+}
+
+.beer {
+   height: 35vh;
+   width: 31vw;
+   background-color: #145434;
+   position: relative;
+}
+
+.circle {
+   height: 40px;
+   width: 40px;
+   background-color: #ffeedf;
+   border-radius: 50%;
+   border: 3px solid #145434;
+   color: #145434;
+   font-size: 1.2rem;
+   z-index: 1;
+   text-align: center;
+   font-weight: bold;
+   padding-top: 2px;
+   position: absolute;
+   left: -20px;
+   top: -20px;
+}
+
+.greenbox {
+   color: #ffeedf;
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+}
+
+.greenbox h1 {
+   font-weight: 300;
+   padding-bottom: 40px;
+}
+
+.line {
+   height:1px;
+   width: 100%;
+   background-color: #ffeedf;
+   border: none;
+}
+
+.greenbox p {
+   font-weight: 400;
+   padding-top: 10px;
+   position: relative;
+}
+
+.greenbox p > strong {
+   font-weight: bold;
+   top: -5px;
+   position: relative;
+}
+
+.lightbox {
+   position: absolute;
+   height: 50px;
+   width: 200px;
+   background-color: #ffeedf;
+   border: 2px solid #145434;
+   text-align: center;
+   right: -10px;
+   bottom: -10px;
+   color: #145434;
+   font-weight: bold;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 40px;
+   padding: 10px;
+}
+
+
